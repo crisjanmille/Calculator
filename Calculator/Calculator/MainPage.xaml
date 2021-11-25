@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+
+    
+    <StackLayout Orientation="Vertical" Padding="10" BackgroundColor="Black">
+        <Label Text="0" x:Name="lblInput" FontSize="62" HorizontalTextAlignment="right" TextColor="White" ></Label>
+        <Label Text="" x:Name="lblSolution" FontSize="44" HorizontalTextAlignment="right" TextColor="White" ></Label>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" WidthRequest="370" BackgroundColor="Black">
+            <Button Text="C" x:Name="btnClear" BackgroundColor="DimGray" TextColor="White" FontSize="40" Clicked="BtnClear_Clicked"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" BackgroundColor="Black">
+            <Button Text="7" x:Name="btnSeven" BackgroundColor="#2e2e2e" TextColor="White" FontSize="40" Clicked="BtnSeven_Clicked"></Button>
+            <Button Text="8" x:Name="btnEight" BackgroundColor="#2e2e2e" TextColor="White" FontSize="40" Clicked="BtnEight_Clicked"></Button>
+            <Button Text="9" x:Name="btnNine" BackgroundColor="#2e2e2e" TextColor="White" FontSize="40" Clicked="BtnNine_Clicked"></Button>
+            <Button Text="x" x:Name="btnMultiply" BackgroundColor="DarkOrange" TextColor="White" FontSize="30" Clicked="BtnMultiply_Clicked"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" BackgroundColor="Black">
+            <Button Text="4" x:Name="btnFour" BackgroundColor="#2e2e2e" TextColor="White" FontSize="40" Clicked="BtnFour_Clicked"></Button>
+            <Button Text="5" x:Name="btnFive" BackgroundColor="#2e2e2e" TextColor="White" FontSize="40" Clicked="BtnFive_Clicked"></Button>
+            <Button Text="6" x:Name="btnSix" BackgroundColor="#2e2e2e" TextColor="White" FontSize="40" Clicked="BtnSix_Clicked"></Button>
+            <Button Text="-" x:Name="btnSubtract" BackgroundColor="DarkOrange" TextColor="White" FontSize="40" Clicked="BtnSubtract_Clicked"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" BackgroundColor="Black">
+            <Button Text="1" x:Name="btnOne" BackgroundColor="#2e2e2e" TextColor="White" FontSize="40" Clicked="BtnOne_Clicked"></Button>
+            <Button Text="2" x:Name="btnTwo" BackgroundColor="#2e2e2e" TextColor="White" FontSize="40" Clicked="BtnTwo_Clicked"></Button>
+            <Button Text="3" x:Name="btnThree" BackgroundColor="#2e2e2e" TextColor="White" FontSize="40" Clicked="BtnThree_Clicked"></Button>
+            <Button Text="+" x:Name="btnAdd" BackgroundColor="DarkOrange" TextColor="White" FontSize="40" Clicked="BtnAdd_Clicked"></Button>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" BackgroundColor="Black">
+            <Button Text="0" x:Name="btnZero" BackgroundColor="#2e2e2e" TextColor="White" FontSize="40" Clicked="BtnZero_Clicked"></Button>
+            <Button Text="&lt;" x:Name="btnDel" BackgroundColor="DimGray" TextColor="White" FontSize="40" Clicked="BtnDelete_Clicked"></Button>
+            <Button Text="=" x:Name="btnEquals" BackgroundColor="DimGray" TextColor="White" FontSize="40" Clicked="BtnEquals_Clicked"></Button>
+            <Button Text="÷" x:Name="btnDivide" BackgroundColor="DarkOrange" TextColor="White" FontSize="40" Clicked="BtnDivide_Clicked"></Button>
+        </StackLayout>
+
+
+    </StackLayout>
+
+</ContentPage>
+
+
